@@ -7,7 +7,7 @@ import { GoArrowUpRight } from "react-icons/go";
 const ContentSection = () => {
   const videoRef = useRef(null);
 
-  // মাউস হোভার করলে ভিডিও প্লে হবে
+  
   const handleMouseEnter = () => {
     videoRef.current.play();
   };
