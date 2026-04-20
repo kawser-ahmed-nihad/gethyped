@@ -188,7 +188,6 @@ const Navbar = () => {
 
             <div>
 
-
                 <button className='bg-[#fcb8fa] space-x-2 p-1.5 flex items-center rounded-xl cursor-pointer
   transition-transform duration-500
   hover:-rotate-6 hover:scale-105
