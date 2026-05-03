@@ -39,7 +39,7 @@ const Brands = () => {
                         <div
                             key={i}
                             className="flex items-center justify-center bg-[#faf4ec] rounded-2xl border border-gray-400 p-4 flex-shrink-0"
-                            
+
                         >
                             <img
                                 src={img}
@@ -50,6 +50,12 @@ const Brands = () => {
                     ))}
                 </motion.div>
             </div>
+
+
+            <div className='w-full mt-20 h-px max-w-7xl mx-auto bg-[#ccc7c1]'>
+
+            </div>
+            
 
         </div>
     );

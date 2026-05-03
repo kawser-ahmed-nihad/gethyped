@@ -1,0 +1,239 @@
+import React from "react";
+import { FaGithub, FaGofore } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
+import { LiaLinkedin } from "react-icons/lia";
+import { NavLink } from "react-router";
+
+const BeautifulFooter = () => {
+  return (
+    <div className="relative max-w-7xl mx-auto h-80 w-full">
+
+
+      <div className="absolute right-10 -top-[40px] z-20">
+        <div className="relative w-32 h-32 flex items-center justify-center">
+          {/* স্টিকারের গোলাপি ব্যাকগ্রাউন্ড এবং এনিমেশন */}
+          <div className="absolute inset-0 bg-[#fbc2ff] rounded-full shadow-lg animate-[spin_10s_linear_infinite]">
+            {/* বৃত্তাকার টেক্সট (এটি ইমেজ হিসেবে ব্যবহার করা ভালো, নতুবা SVG textPath) */}
+            <svg viewBox="0 0 100 100" className="w-full h-full p-2">
+              <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text className="text-[10px] font-bold uppercase fill-black">
+                <textPath href="#circlePath">
+                  GET HYPED • GET NOTICED • GET RESULTS •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          {/* মাঝখানের 'GH' লোগো */}
+          <div className="z-10 text-black font-black text-3xl italic -rotate-12">
+            GH
+          </div>
+        </div>
+      </div>
+      {/* মেইন ব্যাকগ্রাউন্ড */}
+      <div
+        className="relative h-full w-full bg-[#eae4d8]"
+        style={{
+          // SVG clipPath ব্যবহার করে বাম ও ডান দুই পাশের কোণা নিখুঁত রাউন্ড করা হয়েছে
+          // clipPath: "path('M 0,192 C 0,192 0,175 15,170 L 1265,5 C 1280,0 1280,15 1280,15 L 1280,320 L 0,320 Z')"
+
+          clipPath: "path('M 0,250 C 0,250 0,235 15,230 L 1265,5 C 1280,0 1280,15 1280,15 L 1280,320 L 0,320 Z')"
+        }}
+      >
+
+        <div className=" absolute  bottom-0 left-0 w-32 h-32 p-2 ">
+
+          <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 208 84" fill="none"><path d="M207.793 18.4091V68.8219C207.793 77.2049 200.998 84 192.615 84H7.46524C3.34207 84 0 80.6579 0 76.5348V37.5951C0 33.8732 2.69331 30.6933 6.36831 30.0829L186.384 0.251801C197.596 -1.60491 207.793 7.04266 207.793 18.4049" fill="#FAF4EC"></path><path d="M188.876 80.0646H55.9061V25.8317L186.618 5.34814C195.454 3.96521 203.444 10.7945 203.444 19.7408V65.4969C203.444 73.5427 196.922 80.0646 188.876 80.0646Z" fill="black"></path><path d="M71.2635 26.8177V47.2585L67.5415 47.5957V27.3683L59.9312 28.4866V76.7781L67.5415 76.7055V56.478L71.2635 56.2305V76.6714L79.3818 76.5945V25.6226L71.2635 26.8177Z" fill="white"></path><path d="M94.7092 23.3646L92.5452 42.7512L92.4427 44.4116L92.2378 44.4329L92.1354 42.7939L90.0055 24.0561L81.2256 25.3494L87.9482 58.2622V76.5134L96.8391 76.4323V57.75L104.142 21.9731L94.7092 23.3646Z" fill="white"></path><path d="M159.835 25.0207V13.7695L135.377 17.3719V76.0695L159.835 75.839V64.5921L147.179 65.0274V51.2238L159.101 50.4384V39.2854L147.179 40.3695V26.5701L159.835 25.0207Z" fill="white"></path><path d="M120.844 48.8506L116.226 49.2006V29.3018L120.844 28.7256V48.8506ZM105.943 21.7085V76.347L116.149 76.2488V58.5396L120.882 58.2878C127.071 57.9591 131.92 52.8457 131.92 46.6482V31.3805C131.92 24.2695 125.603 18.8146 118.565 19.8518L105.943 21.7128V21.7085Z" fill="white"></path><path d="M182.598 64.7713L176.494 64.9677V21.7768L182.598 21.0128V64.7713ZM162.993 13.3042V75.8091L185.769 75.5957C192.163 75.536 197.315 70.3372 197.315 63.9433V21.7469C197.315 14.636 190.998 9.18108 183.959 10.2183L162.989 13.3085L162.993 13.3042Z" fill="white"></path><path d="M21.5464 80.0646H34.7482V70.4738L27.1336 70.6957V59.8585L34.2873 59.4018V49.8835L27.1336 50.5494V39.7079L34.7482 38.739V29.1481L21.5464 31.214V80.0646Z" fill="black"></path><path d="M36.7714 28.828V38.4829L42.03 37.8128V80.0646H48.3812V37.0061L54.0239 36.289V26.1262L36.7714 28.828Z" fill="black"></path><path d="M14.2348 51.7488V41.2829L8.49394 42.0128V71.5152L14.2348 71.3488V62.6969L10.7092 62.8976V54.5146L19.5616 53.7634V80.0604H14.2391V77.3159L13.3128 78.225C12.1134 79.4031 10.5 80.0604 8.8226 80.0604H7.90491C5.48905 80.0604 3.53418 78.1012 3.53418 75.6896V39.0207C3.53418 36.1524 5.62563 33.7067 8.45978 33.2628L14.5165 32.3152C17.1671 31.9012 19.5659 33.95 19.5659 36.6305V51.2494L14.2433 51.7445L14.2348 51.7488Z" fill="black"></path></svg>
+
+        </div>
+
+        <div className="absolute flex gap-7 bottom-0 right-25 ">
+          <div className="relative  -top-20 ">
+            <ul className='flex items-center space-x-2 py-2 px-3 rounded-xl  font-semibold text-sm'>
+              <li>
+                <NavLink className="group bg-[#ffffff] relative block px-2 py-1.5 text-sm font-semibold cursor-pointer overflow-hidden rounded-md">
+
+                  {/* Default text */}
+                  <span className="relative z-10 block transition-[translate] duration-[750ms] group-hover:[translate:0_-100%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Expertises
+                  </span>
+
+                  {/* Hover text - নিচ থেকে উঠে আসবে */}
+                  <span className="absolute inset-0 z-10 flex items-center justify-center text-white transition-[translate] duration-[750ms] [translate:0_100%] group-hover:[translate:0_0%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Expertises
+                  </span>
+
+                  {/* ৩ color strip — ডান দিক আগে উঠবে */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] [transform:translateY(100%)_skewY(-8deg)] [transform-origin:bottom_right] group-hover:[transform:translateY(0%)_skewY(0deg)]"
+                    style={{
+                      background: 'linear-gradient(to right, #7b4397 0%, #dc2430 40%, #f5a623 70%)',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                  {/* Final black bg */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] delay-300 [transform:translateY(100%)] group-hover:[transform:translateY(0%)]"
+                    style={{
+                      background: '#111',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="group bg-[#ffffff] relative block px-2 py-1.5 text-sm font-semibold cursor-pointer overflow-hidden rounded-md">
+
+                  {/* Default text */}
+                  <span className="relative z-10 block transition-[translate] duration-[750ms] group-hover:[translate:0_-100%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Work
+                  </span>
+
+                  {/* Hover text - নিচ থেকে উঠে আসবে */}
+                  <span className="absolute inset-0 z-10 flex items-center justify-center text-white transition-[translate] duration-[750ms] [translate:0_100%] group-hover:[translate:0_0%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Work
+                  </span>
+
+                  {/* ৩ color strip — ডান দিক আগে উঠবে */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] [transform:translateY(100%)_skewY(-8deg)] [transform-origin:bottom_right] group-hover:[transform:translateY(0%)_skewY(0deg)]"
+                    style={{
+                      background: 'linear-gradient(to right, #7b4397 0%, #dc2430 40%, #f5a623 70%)',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                  {/* Final black bg */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] delay-300 [transform:translateY(100%)] group-hover:[transform:translateY(0%)]"
+                    style={{
+                      background: '#111',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="group relative bg-[#ffffff] block px-2 py-1.5 text-sm font-semibold cursor-pointer overflow-hidden rounded-md">
+
+                  {/* Default text */}
+                  <span className="relative z-10 block transition-[translate] duration-[750ms] group-hover:[translate:0_-100%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    About
+                  </span>
+
+                  {/* Hover text - নিচ থেকে উঠে আসবে */}
+                  <span className="absolute inset-0 z-10 flex items-center justify-center text-white transition-[translate] duration-[750ms] [translate:0_100%] group-hover:[translate:0_0%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    About
+                  </span>
+
+                  {/* ৩ color strip — ডান দিক আগে উঠবে */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] [transform:translateY(100%)_skewY(-8deg)] [transform-origin:bottom_right] group-hover:[transform:translateY(0%)_skewY(0deg)]"
+                    style={{
+                      background: 'linear-gradient(to right, #7b4397 0%, #dc2430 40%, #f5a623 70%)',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                  {/* Final black bg */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] delay-300 [transform:translateY(100%)] group-hover:[transform:translateY(0%)]"
+                    style={{
+                      background: '#111',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="group bg-[#ffffff] relative block px-2 py-1.5 text-sm font-semibold cursor-pointer overflow-hidden rounded-md">
+
+                  {/* Default text */}
+                  <span className="relative z-10 block transition-[translate] duration-[750ms] group-hover:[translate:0_-100%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Contact
+                  </span>
+
+                  {/* Hover text - নিচ থেকে উঠে আসবে */}
+                  <span className="absolute inset-0 z-10 flex items-center justify-center text-white transition-[translate] duration-[750ms] [translate:0_100%] group-hover:[translate:0_0%]"
+                    style={{
+                      transitionTimingFunction: `linear(0 0%, 0.5737 7.6%, 0.8382 11.87%, 1.0292 16.54%, 1.1258 21.53%, 1.1424 24.48%, 1.1165 31.01%, 1.0507 38.62%, 0.9995 46.99%, 1 100%)`
+                    }}>
+                    Contact
+                  </span>
+
+                  {/* ৩ color strip — ডান দিক আগে উঠবে */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] [transform:translateY(100%)_skewY(-8deg)] [transform-origin:bottom_right] group-hover:[transform:translateY(0%)_skewY(0deg)]"
+                    style={{
+                      background: 'linear-gradient(to right, #7b4397 0%, #dc2430 40%, #f5a623 70%)',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                  {/* Final black bg */}
+                  <span className="absolute inset-0 z-0 transition-[transform] duration-[600ms] delay-300 [transform:translateY(100%)] group-hover:[transform:translateY(0%)]"
+                    style={{
+                      background: '#111',
+                      transitionTimingFunction: `cubic-bezier(0.23, 1, 0.320, 1)`
+                    }}
+                  />
+
+                </NavLink>
+              </li>
+            </ul>
+
+            <div className="px-3 mt-2 flex items-center space-x-1.5">
+              <span className="font-bold">Follow us</span>
+
+              <div className=" flex items-center space-x-2">
+
+                <div className="bg-white transition-all duration-300 hover:scale-110  p-3 rounded-full">
+                  <GrLinkedinOption />
+                </div>
+                <div className="bg-white transition-all duration-300 hover:scale-110  p-3 rounded-full">
+                  <FaGithub />
+                </div>
+                <div className="bg-white transition-all duration-300 hover:scale-110  p-3 rounded-full">
+                  <FaGofore />
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+          <div className="-top-20 relative ">
+            <h1 className="text-sm font-bold">Contact</h1>
+            <p className="text-sm ">kawserahmednihad@gmail.com</p>
+            <p className="text-sm ">+8801841397448</p>
+            <h1 className="text-sm font-bold">Address</h1>
+            <p className="text-sm ">Mymensingh, Bangladesh</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  );
+};
+
+export default BeautifulFooter;
