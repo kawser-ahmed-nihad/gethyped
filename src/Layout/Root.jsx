@@ -9,8 +9,8 @@ const Root = () => {
         <div>
             <Navbar/>
             <Outlet/>
-            <HypedFooter/>
-            <RealHomesFooter/>
+            {/* <HypedFooter/> */}
+            {/* <RealHomesFooter/> */}
         </div>
     );
 };
