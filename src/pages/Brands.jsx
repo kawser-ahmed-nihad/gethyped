@@ -16,7 +16,7 @@ const Brands = () => {
     return (
         <div className="py-28 ">
             <div className='max-w-7xl mx-auto mb-14'>
-                <h1 className="text-6xl mb-10 text-black font-black tracking-tight">
+                <h1 className=" md:text-6xl text-4xl px-6 mb-10 text-black font-black tracking-tight">
                     These brands <br /> got hyped.
                 </h1>
             </div>
