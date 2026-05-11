@@ -20,8 +20,8 @@ const ContentSection = () => {
   return (
     <section className=" px-10 py-28 ">
 
-      <div className="mx-32">
-        <h1 className="text-7xl mb-5 text-black font-extrabold">Content <br /> dat scoort.</h1>
+      <div className="md:mx-32">
+        <h1 className="md:text-7xl text-5xl mb-5 text-black font-extrabold">Content <br /> dat scoort.</h1>
         <p className="text-black text-xl mb-5 font-bold">Wij vertellen jouw verhaal. Op <br /> een manier die écht past bij jouw <br /> doelgroep. Met creatieve content <br /> die werkt en het verschil maakt.</p>
 
         <button className='bg-transparent outline outline-black space-x-2 p-1.5 flex items-center rounded-xl cursor-pointer
@@ -35,9 +35,9 @@ const ContentSection = () => {
         </button>
       </div>
 
-      <div className=" mt-11 mx-16 grid grid-cols-3 gap-12">
+      <div className=" mt-11 md:mx-16 grid grid-cols-1  md:grid-cols-3 gap-12">
         <div
-          className="relative w-full max-w-[400px] aspect-[4/5]  rounded-[2.5rem] border-[6px] border-[#FF5722] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full -rotate-[2deg] max-w-[400px] aspect-[4/5]  rounded-[2.5rem] border-[6px] border-[#FF5722] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -110,7 +110,7 @@ const ContentSection = () => {
           </div>
         </div>
         <div
-          className="relative w-full -mt-20 max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#0d8dff] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full md:-mt-20  max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#0d8dff] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -183,7 +183,7 @@ const ContentSection = () => {
           </div>
         </div>
         <div
-          className="relative w-full -mt-40 max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#33c791] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full md:-mt-40 -rotate-[2deg] max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#33c791] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
