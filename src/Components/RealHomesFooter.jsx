@@ -3,7 +3,7 @@ import { FaGithub, FaGofore } from "react-icons/fa";
 import { GrLinkedinOption } from "react-icons/gr";
 import { NavLink } from "react-router";
 
-const BeautifulFooter = () => {
+const RealHomesFooter = () => {
 
 
   return (
@@ -155,4 +155,4 @@ clip-path: path('M 0 70 Q 0 45, 25 38 L 375 0 Q 400 0, 400 25 L 400 1000 L 0 100
   );
 };
 
-export default BeautifulFooter;
+export default RealHomesFooter;
