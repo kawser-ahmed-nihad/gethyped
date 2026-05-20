@@ -3,6 +3,9 @@ import React from "react";
 import Anniek from '../assets/Anniek Bril.png'
 import { FaArrowDown, FaArrowRightLong } from "react-icons/fa6";
 
+import video2 from "../assets/video/petrolhead-loop.mp4";
+import video1 from "../assets/video/Loop Salontopper.mp4";
+
 const HeroSection = () => {
     return (
         <div className=" min-h-screen flex items-center px-6  py-16">
@@ -62,7 +65,7 @@ h-[260px] md:h-[380px] bg-[#0070F3] text-white p-6 rounded-3xl shadow-xl
                             className="
                             
        md:w-[260px] lg:w-[300px]
-h-[260px] md:h-[380px] mt-5 bg-white p-1 rounded-3xl shadow-xl
+h-[260px] md:h-[380px] mt-5 bg-white  rounded-3xl shadow-xl
 z-0
       transform transition-all duration-500
       ease-[cubic-bezier(0.34,1.56,0.64,1)]
@@ -77,8 +80,19 @@ z-0
       hover:z-20
     "
                         >
-                            <div className="w-full h-full bg-[#E5DACE] rounded-2xl p-4">
-                                <img src="https://via.placeholder.com/280x360" className="w-full h-full object-cover rounded-2xl" />
+                            <div className="w-full h-full  rounded-2xl ">
+                                <video
+                                    muted
+                                    loop
+                                    playsInline
+                                    autoPlay
+                                    alt="Social Strategy"
+                                    className="w-full h-full object-cover rounded-2xl"
+
+                                >
+                                    <source src={video1} type="video/mp4" />
+                                </video>
+
                             </div>
                         </div>
 
@@ -112,7 +126,7 @@ hidden md:block
                         <div
                             className="
                             hidden lg:block
-      w-[300px] h-[380px] mt-16 bg-white p-1 rounded-3xl shadow-xl
+      w-[300px] h-[380px] mt-16 bg-white  rounded-3xl shadow-xl
 
       transform transition-all duration-500
       ease-[cubic-bezier(0.34,1.56,0.64,1)]
@@ -128,7 +142,18 @@ hidden md:block
     "
                         >
                             <div className="w-full h-full relative">
-                                <img src="https://via.placeholder.com/280x360" className="w-full h-full object-cover rounded-2xl" />
+
+                                <video
+                                    muted
+                                    loop
+                                    playsInline
+                                    autoPlay
+                                    alt="Social Strategy"
+                                    className="w-full h-full object-cover rounded-2xl"
+
+                                >
+                                    <source src={video2} type="video/mp4" />
+                                </video>
                                 <div className="absolute bottom-4 left-4 bg-white/10 p-2 rounded-lg backdrop-blur-sm">
                                     <p className="text-black text-xs font-bold px-2 py-1 rounded bg-white">
                                         CARBON DAK.
@@ -182,6 +207,8 @@ mx-4
 
                         {/* Image */}
                         <div className="w-48 h-full  hidden md:block rounded-xl overflow-hidden">
+
+
                             <img
                                 src={Anniek}// replace with your image
                                 alt="model"

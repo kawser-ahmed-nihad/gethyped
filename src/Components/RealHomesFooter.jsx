@@ -19,14 +19,22 @@ clip-path: path('M 0 70 Q 0 45, 25 38 L 375 0 Q 400 0, 400 25 L 400 1000 L 0 100
     margin-right: 15px !important;
     width: calc(100% - 30px) !important;
   }
+    @media (min-width: 768px) and (max-width: 1023px) {
+  .mobile-friendly-footer {
+    clip-path: path('M 0,245 C 0,245 0,225 15,220 L 753,2 C 768,0 768,14 768,14 L 768,320 L 0,320 Z') !important;
+     margin-left: 15px !important;
+    margin-right: 15px !important;
+    width: calc(100% - 30px) !important;
+  }
+}
 }
 
       `}</style>
 
-      
+
       <div className="w-full  ">
         {/*  — top-right */}
-        <div className="hidden md:block relative h-0">
+        <div className="hidden lg:block relative h-0">
           <div className="absolute right-4 sm:right-10 -bottom-10 z-20">
             <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center">
               <div className="absolute inset-0 bg-[#fbc2ff] rounded-full shadow-lg animate-[spin_10s_linear_infinite]">
@@ -55,14 +63,14 @@ clip-path: path('M 0 70 Q 0 45, 25 38 L 375 0 Q 400 0, 400 25 L 400 1000 L 0 100
         >
 
 
-          
+
           <div className="flex flex-col h-full pt-2 pb-6  md:pb-0 md:px-2  ">
 
             {/* GETHYPED  */}
             <div className="flex flex-col items-center sm:flex-row  sm:justify-between gap-6 mt-auto">
 
               {/*  GETHYPED SVG  */}
-              <div className="w-[360px] md:w-64 mt-2  shrink-0">
+              <div className="w-[360px] md:w-64 mt-2 relative  shrink-0">
                 <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 208 84" fill="none">
                   <path d="M207.793 18.4091V68.8219C207.793 77.2049 200.998 84 192.615 84H7.46524C3.34207 84 0 80.6579 0 76.5348V37.5951C0 33.8732 2.69331 30.6933 6.36831 30.0829L186.384 0.251801C197.596 -1.60491 207.793 7.04266 207.793 18.4049" fill="#FAF4EC" />
                   <path d="M188.876 80.0646H55.9061V25.8317L186.618 5.34814C195.454 3.96521 203.444 10.7945 203.444 19.7408V65.4969C203.444 73.5427 196.922 80.0646 188.876 80.0646Z" fill="black" />
@@ -78,7 +86,7 @@ clip-path: path('M 0 70 Q 0 45, 25 38 L 375 0 Q 400 0, 400 25 L 400 1000 L 0 100
               </div>
 
               {/*  nav + social + contact */}
-              <div className="flex md:flex-row flex-col mx-7 md:mx-0 mr-20 relative md:-mt-20  gap-4">
+              <div className="flex md:flex-row flex-col mx-7 md:mx-0 pr-20 relative md:-mt-20  gap-4">
                 <div>
                   <ul className="flex  items-center gap-2 font-semibold text-sm">
                     {["Expertises", "Work", "About", "Contact"].map((item) => (

@@ -3,6 +3,8 @@ import { BsArrowRight } from 'react-icons/bs';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
+import video1 from '../assets/video/Loop Salontopper.mp4';
+
 const ExpertiseSection = () => {
     const ref = useRef(null);
 
@@ -56,11 +58,18 @@ const ExpertiseSection = () => {
                                     </span>
 
                                     <div className="border-[12px] border-[#FF5722] rounded-[40px] overflow-hidden md:w-[300px] md:h-[400px] -mt-16 w-[200px] h-[250px] md:-mr-20 shadow-2xl">
-                                        <img
-                                            src="https://via.placeholder.com/300x400"
+                                        <video
+                                            muted
+                                            loop
+                                            playsInline
+                                            autoPlay
                                             alt="Social Strategy"
                                             className="w-full h-full object-cover"
-                                        />
+
+                                        >
+                                            <source src={video1} type="video/mp4" />
+                                        </video>
+
                                     </div>
                                 </div>
                             </div>
@@ -119,17 +128,23 @@ const ExpertiseSection = () => {
                                     </span>
 
                                     <div className="border-[12px] -mt-16 border-[#feffff] rounded-[40px] overflow-hidden md:w-[300px] md:h-[400px] w-[200px] h-[250px] md:-mr-20 shadow-2xl">
-                                        <img
-                                            src="https://via.placeholder.com/300x400"
+                                        <video
+                                            muted
+                                            loop
+                                            playsInline
+                                            autoPlay
                                             alt="Social Strategy"
                                             className="w-full h-full object-cover"
-                                        />
+                                        >
+                                            <source src={video1} type="video/mp4" />
+
+                                        </video>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div className="max-w-md relative md:-mt-60">
+                            <div className="max-w-md relative lg:-mt-60 md:-mt-48">
                                 <h4 className="text-xl font-bold mb-2 md:mb-4 text-[#1A1A1A]">
                                     Slimme strategie. Sterke start.
                                 </h4>
@@ -182,17 +197,23 @@ const ExpertiseSection = () => {
                                     </span>
 
                                     <div className="border-[12px] border-[#feffff] rounded-[40px] overflow-hidden md:w-[300px] md:h-[400px] w-[200px] h-[250px] md:-mr-20 -mt-16 shadow-2xl">
-                                        <img
-                                            src="https://via.placeholder.com/300x400"
+                                        <video
+                                            muted
+                                            loop
+                                            playsInline
+                                            autoPlay
                                             alt="Social Strategy"
                                             className="w-full h-full object-cover"
-                                        />
+
+                                        >
+                                            <source src={video1} type="video/mp4" />
+                                        </video>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <div className="max-w-md relative md:-mt-60">
+                            <div className="max-w-md relative lg:-mt-60 md:-mt-48">
                                 <h4 className="text-xl font-bold mb-2 md:mb-4 text-[#1A1A1A]">
                                     Slimme strategie. Sterke start.
                                 </h4>
@@ -254,11 +275,17 @@ const ExpertiseSection = () => {
                                     </span>
 
                                     <div className="border-[12px] border-[#feffff] rounded-[40px] overflow-hidden md:w-[300px] md:h-[400px] w-[200px] h-[250px] md:-mr-20 shadow-2xl z-50 -mt-16">
-                                        <img
-                                            src="https://via.placeholder.com/300x400"
+                                        <video
+                                            muted
+                                            loop
+                                            playsInline
+                                            autoPlay
                                             alt="Social Strategy"
                                             className="w-full h-full object-cover"
-                                        />
+
+                                        >
+                                            <source src={video1} type="video/mp4" />
+                                        </video>
                                     </div>
 
 
@@ -266,7 +293,7 @@ const ExpertiseSection = () => {
                             </div>
 
 
-                            <div className="max-w-md relative md:-mt-60">
+                            <div className="max-w-md relative lg:-mt-60 md:-mt-48">
                                 <h4 className="text-xl font-bold mb-2 md:mb-4 text-[#1A1A1A]">
                                     Slimme strategie. Sterke start.
                                 </h4>
@@ -296,10 +323,10 @@ const ExpertiseSection = () => {
                     </motion.div>
                 </div>
 
-            </div>
+            </div >
 
 
-        </section>
+        </section >
     );
 };
 

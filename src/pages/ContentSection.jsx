@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 
-
+import Video1 from '../assets/video/Loop Salontopper.mp4'
 
 const ContentSection = () => {
   const videoRef = useRef(null);
@@ -12,7 +12,7 @@ const ContentSection = () => {
     videoRef.current.play();
   };
 
-  // মাউস সরিয়ে নিলে ভিডিও পজ এবং রিসেট হবে
+  
   const handleMouseLeave = () => {
     videoRef.current.pause();
     videoRef.current.currentTime = 0;
@@ -20,7 +20,7 @@ const ContentSection = () => {
   return (
     <section className=" px-10 py-28 ">
 
-      <div className="md:mx-32">
+      <div className="lg:mx-32">
         <h1 className="md:text-7xl text-5xl mb-5 text-black font-extrabold">Content <br /> dat scoort.</h1>
         <p className="text-black text-xl mb-5 font-bold">Wij vertellen jouw verhaal. Op <br /> een manier die écht past bij jouw <br /> doelgroep. Met creatieve content <br /> die werkt en het verschil maakt.</p>
 
@@ -35,21 +35,21 @@ const ContentSection = () => {
         </button>
       </div>
 
-      <div className=" mt-11 md:mx-16 grid grid-cols-1  md:grid-cols-3 gap-12">
+      <div className=" mt-11 lg:mx-16 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
-          className="relative w-full -rotate-[2deg] max-w-[400px] aspect-[4/5]  rounded-[2.5rem] border-[6px] border-[#FF5722] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full -rotate-[2deg] max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#FF5722] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {/* Video Element */}
           <video
-            ref={videoRef}
-            muted
+ ref={videoRef}
+   muted
             loop
             playsInline
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <source src="YOUR_VIDEO_URL_HERE.mp4" type="video/mp4" />
+            <source src={Video1} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -110,7 +110,7 @@ const ContentSection = () => {
           </div>
         </div>
         <div
-          className="relative w-full md:-mt-20  max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#0d8dff] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full md:mt-8 max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#0d8dff] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -183,7 +183,7 @@ const ContentSection = () => {
           </div>
         </div>
         <div
-          className="relative w-full md:-mt-40 -rotate-[2deg] max-w-[400px] aspect-[4/5] rounded-[2.5rem] border-[6px] border-[#33c791] overflow-hidden bg-black group cursor-pointer shadow-xl"
+          className="relative w-full md:-mt-0 -rotate-[2deg] max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#33c791] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
@@ -256,8 +256,6 @@ const ContentSection = () => {
           </div>
         </div>
       </div>
-
-
 
 
     </section>
