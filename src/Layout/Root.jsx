@@ -9,7 +9,7 @@ const Root = () => {
         <div>
             <Navbar/>
             <Outlet/>
-            {/* <HypedFooter/> */}
+            <HypedFooter/>
             <RealHomesFooter/>
         </div>
     );

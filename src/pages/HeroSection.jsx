@@ -3,8 +3,9 @@ import React from "react";
 import Anniek from '../assets/Anniek Bril.png'
 import { FaArrowDown, FaArrowRightLong } from "react-icons/fa6";
 
-import video2 from "../assets/video/petrolhead-loop.mp4";
-import video1 from "../assets/video/Loop Salontopper.mp4";
+import video2 from "../assets/video/video2.mp4";
+import video1 from "../assets/video/video1.mp4";
+import video3 from "../assets/video/video3.mp4";
 
 const HeroSection = () => {
     return (
@@ -154,11 +155,7 @@ hidden md:block
                                 >
                                     <source src={video2} type="video/mp4" />
                                 </video>
-                                <div className="absolute bottom-4 left-4 bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                                    <p className="text-black text-xs font-bold px-2 py-1 rounded bg-white">
-                                        CARBON DAK.
-                                    </p>
-                                </div>
+
                             </div>
                         </div>
 
@@ -177,7 +174,7 @@ hidden md:block
 
 mx-4
                              md:hidden
-      w-[300px] h-[380px] mt-16 bg-white p-1 rounded-3xl shadow-xl
+      w-[300px] h-[380px] mt-16 bg-white rounded-3xl shadow-xl
 
       transform transition-all duration-500
       ease-[cubic-bezier(0.34,1.56,0.64,1)]
@@ -193,12 +190,18 @@ mx-4
     "
                     >
                         <div className="w-full h-full relative">
-                            <img src="https://via.placeholder.com/280x360" className="w-full h-full object-cover rounded-2xl" />
-                            <div className="absolute bottom-4 left-4 bg-white/10 p-2 rounded-lg backdrop-blur-sm">
-                                <p className="text-black text-xs font-bold px-2 py-1 rounded bg-white">
-                                    CARBON DAK.
-                                </p>
-                            </div>
+                            <video
+                                muted
+                                loop
+                                playsInline
+                                autoPlay
+                                alt="Social Strategy"
+                                className="w-full h-full object-cover rounded-2xl"
+
+                            >
+                                <source src={video3} type="video/mp4" />
+                            </video>
+
                         </div>
                     </div>
 

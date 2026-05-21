@@ -3,7 +3,10 @@ import { BsArrowRight } from 'react-icons/bs';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-import video1 from '../assets/video/Loop Salontopper.mp4';
+import video1 from '../assets/video/video1.mp4';
+import video2 from '../assets/video/video2.mp4';
+import video3 from '../assets/video/video3.mp4';
+import video4 from '../assets/video/video4.mp4';
 
 const ExpertiseSection = () => {
     const ref = useRef(null);
@@ -118,7 +121,7 @@ const ExpertiseSection = () => {
                             </span>
                             <div className='flex md:flex-row flex-col justify-between '>
                                 <h2 className="text-4xl md:text-8xl font-bold text-[#1A1A1A] mt-6 mb-2 md:mb-12 tracking-tighter">
-                                    Social strategy
+                                    Content die opvalt en raakt.
                                 </h2>
 
                                 <div className="relative z-10 transform md:rotate-[4deg] md:pr-20 lg:pr-10 rotate-[2deg]  transition-transform duration-500">
@@ -136,7 +139,7 @@ const ExpertiseSection = () => {
                                             alt="Social Strategy"
                                             className="w-full h-full object-cover"
                                         >
-                                            <source src={video1} type="video/mp4" />
+                                            <source src={video2} type="video/mp4" />
 
                                         </video>
                                     </div>
@@ -144,23 +147,22 @@ const ExpertiseSection = () => {
                             </div>
 
 
-                            <div className="max-w-md relative lg:-mt-60 md:-mt-48">
+                            <div className="max-w-md relative -mt-40">
                                 <h4 className="text-xl font-bold mb-2 md:mb-4 text-[#1A1A1A]">
-                                    Slimme strategie. Sterke start.
+                                    Content die opvalt en raakt.
                                 </h4>
                                 <p className="text-gray-800 font-semibold mb-4  md:mb-10">
-                                    We duiken diep in jouw merk, doelgroep en <br /> doelen. En vertalen data naar een duidelijk <br /> plan met formats die écht impact maken. <br /> Zo weet je precies waarom het werkt.
-                                </p>
+                                    We maken content die opvalt. Blijft hangen. <br /> En jouw doelgroep raakt. Creatief, snel en <br /> energiek. Altijd met het doel voor ogen.                                </p>
 
 
 
-                                <button className='bg-[#FF5722] space-x-2 p-1.5 flex items-center rounded-xl text-white cursor-pointer
+                                <button className='bg-white space-x-2 p-1.5 flex items-center rounded-xl text-black cursor-pointer
   transition-transform duration-500
   hover:-rotate-6 hover:scale-105
   [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]'>
-                                    <span className='text-sm font-bold'> Meer over social strategie</span>
-                                    <span className='bg-[#fffef7] p-2 rounded-md'>
-                                        <BsArrowRight className='text-black' />
+                                    <span className='text-sm font-bold'> Meer over content creatie</span>
+                                    <span className='bg-black p-2 rounded-md'>
+                                        <BsArrowRight className='text-white' />
                                     </span>
                                 </button>
 
@@ -187,7 +189,7 @@ const ExpertiseSection = () => {
                             </span>
                             <div className='flex md:flex-row flex-col justify-between '>
                                 <h2 className="text-4xl md:text-8xl font-bold text-[#1A1A1A] mt-6 mb-2 md:mb-12 tracking-tighter">
-                                    Social strategy
+                                    Activation
                                 </h2>
 
                                 <div className="relative z-10 transform md:rotate-[4deg] md:pr-20 lg:pr-10 rotate-[2deg]  transition-transform duration-500">
@@ -206,7 +208,7 @@ const ExpertiseSection = () => {
                                             className="w-full h-full object-cover"
 
                                         >
-                                            <source src={video1} type="video/mp4" />
+                                            <source src={video3} type="video/mp4" />
                                         </video>
                                     </div>
                                 </div>
@@ -215,21 +217,21 @@ const ExpertiseSection = () => {
 
                             <div className="max-w-md relative lg:-mt-60 md:-mt-48">
                                 <h4 className="text-xl font-bold mb-2 md:mb-4 text-[#1A1A1A]">
-                                    Slimme strategie. Sterke start.
+                                    Zichtbaar waar en wanneer het telt.
                                 </h4>
                                 <p className="text-gray-800 font-semibold mb-4 md:mb-10">
-                                    We duiken diep in jouw merk, doelgroep en <br /> doelen. En vertalen data naar een duidelijk <br /> plan met formats die écht impact maken. <br /> Zo weet je precies waarom het werkt.
+                                    De juiste content verdient het om gezien te <br /> worden. We verspreiden de content waar jouw <br /> doelgroep is. Zo raakt jouw merk de juiste <br /> mensen, precies waar en wanneer het telt.
                                 </p>
 
 
 
-                                <button className='bg-[#FF5722] space-x-2 p-1.5 flex items-center rounded-xl text-white cursor-pointer
+                                <button className='bg-white space-x-2 p-1.5 flex items-center rounded-xl text-black cursor-pointer
   transition-transform duration-500
   hover:-rotate-6 hover:scale-105
   [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]'>
-                                    <span className='text-sm font-bold'> Meer over social strategie</span>
-                                    <span className='bg-[#fffef7] p-2 rounded-md'>
-                                        <BsArrowRight className='text-black' />
+                                    <span className='text-sm font-bold'>Meer over activatie</span>
+                                    <span className='bg-black p-2 rounded-md'>
+                                        <BsArrowRight className='text-white' />
                                     </span>
                                 </button>
 
@@ -263,8 +265,7 @@ const ExpertiseSection = () => {
                             </div>
                             <div className='flex md:flex-row flex-col justify-between '>
                                 <h2 className="text-4xl md:text-8xl font-bold text-[#1A1A1A] mt-6 mb-2 md:mb-12 tracking-tighter">
-                                    Social strategy
-                                </h2>
+                                    Data                        </h2>
 
 
 
@@ -284,7 +285,7 @@ const ExpertiseSection = () => {
                                             className="w-full h-full object-cover"
 
                                         >
-                                            <source src={video1} type="video/mp4" />
+                                            <source src={video4} type="video/mp4" />
                                         </video>
                                     </div>
 
@@ -303,13 +304,13 @@ const ExpertiseSection = () => {
 
 
 
-                                <button className='bg-[#FF5722] space-x-2 p-1.5 flex items-center rounded-xl text-white cursor-pointer
+                                <button className='bg-white space-x-2 p-1.5 flex items-center rounded-xl text-black cursor-pointer
   transition-transform duration-500
   hover:-rotate-6 hover:scale-105
   [transition-timing-function:cubic-bezier(0.34,1.56,0.64,1)]'>
                                     <span className='text-sm font-bold'> Meer over social strategie</span>
-                                    <span className='bg-[#fffef7] p-2 rounded-md'>
-                                        <BsArrowRight className='text-black' />
+                                    <span className='bg-black p-2 rounded-md'>
+                                        <BsArrowRight className='text-white' />
                                     </span>
                                 </button>
 

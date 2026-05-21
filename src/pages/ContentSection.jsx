@@ -2,20 +2,22 @@ import React, { useRef } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
 
-import Video1 from '../assets/video/Loop Salontopper.mp4'
+import Video6 from '../assets/video/video6.mp4'
+import Video5 from '../assets/video/video5.mp4'
+import Video4 from '../assets/video/video4.mp4'
 
 const ContentSection = () => {
-  const videoRef = useRef(null);
+  const videoRef1 = useRef(null);
+  const videoRef2 = useRef(null);
+  const videoRef3 = useRef(null);
 
-  
-  const handleMouseEnter = () => {
-    videoRef.current.play();
+  const handleMouseEnter = (ref) => {
+    ref.current?.play();
   };
 
-  
-  const handleMouseLeave = () => {
-    videoRef.current.pause();
-    videoRef.current.currentTime = 0;
+  const handleMouseLeave = (ref) => {
+    ref.current?.pause();
+    ref.current.currentTime = 0;
   };
   return (
     <section className=" px-10 py-28 ">
@@ -39,17 +41,18 @@ const ContentSection = () => {
         <div
           className="relative w-full -rotate-[2deg] max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#FF5722] overflow-hidden bg-black group cursor-pointer shadow-xl"
           onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => handleMouseEnter(videoRef1)}
+          onMouseLeave={() => handleMouseLeave(videoRef1)}
         >
           {/* Video Element */}
           <video
- ref={videoRef}
-   muted
+            ref={videoRef1}
+            muted
             loop
             playsInline
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <source src={Video1} type="video/mp4" />
+            <source src={Video4} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -111,18 +114,18 @@ const ContentSection = () => {
         </div>
         <div
           className="relative w-full md:mt-8 max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#0d8dff] overflow-hidden bg-black group cursor-pointer shadow-xl"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => handleMouseEnter(videoRef2)}
+          onMouseLeave={() => handleMouseLeave(videoRef2)}
         >
           {/* Video Element */}
           <video
-            ref={videoRef}
+            ref={videoRef2}
             muted
             loop
             playsInline
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <source src="YOUR_VIDEO_URL_HERE.mp4" type="video/mp4" />
+            <source src={Video5} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -184,18 +187,18 @@ const ContentSection = () => {
         </div>
         <div
           className="relative w-full md:-mt-0 -rotate-[2deg] max-w-[400px] md:max-w-full aspect-[4/5] md:aspect-[3/4] rounded-[2.5rem] border-[6px] border-[#33c791] overflow-hidden bg-black group cursor-pointer shadow-xl"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={() => handleMouseEnter(videoRef3)}
+          onMouseLeave={() => handleMouseLeave(videoRef3)}
         >
           {/* Video Element */}
           <video
-            ref={videoRef}
+            ref={videoRef3}
             muted
             loop
             playsInline
             className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500"
           >
-            <source src="YOUR_VIDEO_URL_HERE.mp4" type="video/mp4" />
+            <source src={Video6} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 

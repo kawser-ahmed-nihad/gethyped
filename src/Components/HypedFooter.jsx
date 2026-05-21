@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaTiktok, FaInstagram, FaYoutube, FaEnvelope, FaFire } fr
 
 const HypedFooter = () => {
   return (
-    <footer className="relative max-w-7xl mx-auto pt-20 ">
+    <footer className=" hidden md:block relative max-w-7xl mx-auto pt-20 ">
 
 
       <div className=" text-center pt-28   ">
